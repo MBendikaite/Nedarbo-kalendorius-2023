@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nedarbo dienų kalendorius</title>
+   <style>
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+background-color: rgb(248, 242, 242);
+text-align: center;
+padding-top: 0%;
+padding-bottom: 0;
+justify-content: center;
+margin: auto;
+}
+
+main{
+width: 800px;
+align-items: center;
+justify-items: center;
+margin: auto;
+
+}
+
+.kalendorius{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+  margin: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+    
+}
+
+.dienos{ 
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    list-style: none;
+    font-size: 12px;
+    background-color: rgb(0, 128, 17);
+    background-image: linear-gradient(#56b302,#35b659);
+    color: #ffffff;
+    line-height: 22px;
+    font-weight: lighter;
+    
+}
+
+.data{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    list-style: none;
+    color: #4a4a4a;
+    background-color: #ffffff;
+    line-height: 32px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 1px 1px 13px 0 rgb(0 0 0 / 11%);
+   
+}
+.menesis h4{
+    font-family: sans-serif;
+    font-size: 16px;
+    background-color: rgb(0, 128, 17);
+    background-image: linear-gradient(#35b659, #56b302);
+    color: #ffffff;
+    font-weight: lighter;
+    line-height: 22px;
+    letter-spacing: 0.6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+
+
+.mark{
+background-color: green;
+color: white;
+}
+
+.marked{
+    background-color: rgb(248, 243, 243);
+color: red;
+}
+
+p{
+  line-height: 1.6;
+ font-family: sans-serif;
+  
+}
+
+   </style>
+  
+</head>
+<body>
+   
+    <main>
+      
+        <div class="kalendorius">
+            <div class="menesis">
+        
+                <h4>Sausis</h4>
+                <ul class="dienos">
+                    <li style="width:37px;">Pr</li>
+                    <li>An</li>
+                    <li>Tr</li>
+                    <li>Kr</li>
+                    <li>Pn</li>
+                    <li>Še</li>
+                    <li>Se</li>
+                </ul>
+                <ul class="data">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-01-01 Naujieji metai">1</a></li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li><span style="color: red;" class="active">8</span></li>
+                    <li>9</li>
+                    <li>10</li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li class="mark"><a class="test" href="#" style="color: white; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-01-13 Šiandienos data">13</a></li>
+                    <li>14</li>
+                    <li><span style="color: red;" class="active">15</span></li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li><span style="color: red;" class="active">22</span></li>
+                    <li>23</li>
+                    <li>24</li>
+                    <li>25</li>
+                    <li>26</li>
+                    <li>27</li>
+                    <li>28</li>
+                    <li><span style="color: red;" class="active">29</span></li>
+                    <li>30</li>
+                    <li>31</li>
+                   
+                </ul>
+                <br>
+                
+                <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">01-01
+                     <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-01-01 Naujieji metai">Naujieji metai</a></p>
+                    
+                </div>
+                
+                <div class="menesis">
+                    <h4 >Vasaris</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li><span style="color: red;" class="active">5</span></li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li><span style="color: red;" class="active">12</span></li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-02-16 Lietuvos Valstybės atkūrimo diena">16</a></li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li><span style="color: red;" class="active">19</span></li>
+                        <li>20</li>
+                        <li class="marked"><a class="test" href="#" style="color: #4a4a4a; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-02-21 Užgavėnės">21</a></li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li><span style="color: red;" class="active">26</span></li>
+                        <li>27</li>
+                        <li>28</li>
+                       <br>
+                       <br>
+                     
+                    </ul>
+                    <br>
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">02-16
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-02-16 Lietuvos Valstybės atkūrimo diena">Lietuvos Valstybės atkūrimo diena</a></p>
+                            <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">02-21
+                                <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-02-21 Užgavėnės">Užgavėnės</a></p>
+                </div>
+                <div class="menesis">
+                    <h4>Kovas</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li><span style="color: red;" class="active">5</span></li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-03-11 Nepriklausomybės atkūrimo diena">11</a></li>
+                        <li><span style="color: red;" class="active">12</span></li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li><span style="color: red;" class="active">19</span></li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li><span style="color: red;" class="active">26</span></li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                    <br>
+                    <br>
+                    </ul>
+                    <br>
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">03-11
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-03-11  Nepriklausomybės atkūrimo diena"> Nepriklausomybės atkūrimo diena</a></p>
+                            <br>
+                  </div>
+                
+                <div class="menesis">
+                    <h4>Balandis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li><span style="color: red;" class="active">2</span></li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-04-09 Vėlykos">9</a></li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-04-09 Vėlykų antroji diena">10</a></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li><span style="color: red;" class="active">16</span></li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li><span style="color: red;" class="active">23</span></li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li><span style="color: red;" class="active">30</span></li>
+                        <li style="color: white;">31</li>
+                        
+                    </ul>
+                    
+                    <br>
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">04-09
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-04-09 Vėlykos">Vėlykos</a></p>
+                            <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">04-10
+                                <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-04-10 Vėlykų antroji diena">Vėlykų antroji diena</a></p>
+                    
+                </div>
+                
+                <div class="menesis">
+                    <h4>Gegužė</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-05-01 Tarptautinė darbo diena">1</a></li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-05-07 Motinos diena">7</a></li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li><span style="color: red;" class="active">14</span></li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li><span style="color: red;" class="active">21</span></li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li><span style="color: red;" class="active">28</span></li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <br>
+                        <br>                    
+
+                    </ul> 
+                    <br>
+                   <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">05-01
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-05-01 Tarptautinė darbo diena">Tarptautinė darbo diena</a></p>
+                            <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">05-07
+                                <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-05-07 Motinos diena">Motinos diena</a></p>
+
+                    
+                </div>
+              
+                <div class="menesis">
+                    <h4>Birželis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-06-04 Tėvo diena">4</a></li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li><span style="color: red;" class="active">11</span></li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li><span style="color: red;" class="active">18</span></li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-06-24 Joninės">24</a></li>
+                        <li><span style="color: red;" class="active">25</span></li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                      <br>
+                      <br>
+                    </ul>
+                    
+                    <br>
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">06-04
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-06-04 Tėvo diena">Tėvo diena</a></p>
+                            <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">06-24
+                                <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-06-24 Joninės">Joninės</a></p>
+
+                    
+                </div>
+                    
+                <div class="menesis">
+                    <h4>Liepa</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li><span style="color: red;" class="active">2</span></li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-07-06 Karaliaus Mindaugo karūnavimo diena">6</a></li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li><span style="color: red;" class="active">9</span></li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li><span style="color: red;" class="active">16</span></li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li><span style="color: red;" class="active">23</span></li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li><span style="color: red;" class="active">30</span></li>
+                        <li>31</li>
+            
+                    </ul>
+                    <br>
+                   
+                    
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">07-16
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-07-06 Karaliaus Mindaugo karūnavimo diena">Karaliaus Mindaugo karūnavimo</a></p>
+                        <p class="text2" style="color: #006600; font-weight: bold; font-size: small; text-align: justify;">diena</p>
+<br>
+                    
+                </div>
+                <div class="menesis">
+                    <h4>Rugpjūtis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li><span style="color: red;" class="active">6</span></li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li><span style="color: red;" class="active">13</span></li>
+                        <li>14</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-08-15 Žolinė">15</a></li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li><span style="color: red;" class="active">20</span></li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li><span style="color: red;" class="active">27</span></li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li>31</li>
+                        <br><br>
+                    </ul>
+                   <br>
+                    
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">08-15
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-08-15 Žolinė">Žolinė</a></p>
+                    
+                </div>
+        
+                <div class="menesis">
+                    <h4>Rugsėjis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li><span style="color: red;" class="active">3</span></li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span style="color: red;" class="active">10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li><span style="color: red;" class="active">17</span></li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li><span style="color: red;" class="active">24</span></li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <br>
+                        <br>
+                    </ul>
+             
+                </div>
+                    
+                <div class="menesis">
+                    <h4>Spalis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li><span style="color: red;" class="active">1</span></li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li><span style="color: red;" class="active">8</span></li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li><span style="color: red;" class="active">15</span></li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li><span style="color: red;" class="active">22</span></li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li>26</li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li><span style="color: red;" class="active">29</span></li>
+                        <li>30</li>
+                        <li>31</li>
+                    </ul>
+                   
+
+                    
+                </div>
+                <div class="menesis">
+                    <h4>Lapkritis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-11-01 Visų šventųjų diena">1</a></li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-11-02 Vėlines">2</a></li>
+                        <li>3</li>
+                        <li>4</li>
+                        <li><span style="color: red;" class="active">5</span></li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li><span style="color: red;" class="active">12</span></li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li><span style="color: red;" class="active">19</span></li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li>24</li>
+                        <li>25</li>
+                        <li><span style="color: red;" class="active">26</span></li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <br>
+                        <br>
+             </ul>
+             <br>
+           
+             <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">11-01
+                <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-11-01 Visų šventųjų diena">Visų šventųjų diena</a></p>
+                    <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">11-02
+                        <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-11-02 Vėlinės">Vėlinės</a></p>
+
+                    
+                </div>
+                   
+                <div class="menesis">
+                    <h4>Gruodis</h4>
+                    <ul class="dienos">
+                        <li style="width: 37px;">Pr</li>
+                        <li>An</li>
+                        <li>Tr</li>
+                        <li>Kr</li>
+                        <li>Pn</li>
+                        <li>Še</li>
+                        <li>Se</li>
+                    </ul>
+                    <ul class="data">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li><span style="color: red;" class="active">3</span></li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li><span style="color: red;" class="active">10</span></li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li><span style="color: red;" class="active">17</span></li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                        <li>21</li>
+                        <li>22</li>
+                        <li>23</li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-24 Kūčios">24</a></li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-25 Šv. Kalėdos">25</a></li>
+                        <li class="marked"><a class="test" href="#" style="color: red; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-26 Šv. Kalėdų antroji diena">26</a></li>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>29</li>
+                        <li>30</li>
+                        <li><span style="color: red;" class="active">31</span></li>
+                        <li style="color: white;">31</li><li style="color: white;">31</li>
+                    </ul>
+<br>
+<p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">12-24
+    <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-24 Kūčios">Kūčios</a></p>
+        <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">12-25
+            <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-25 Šv. Kalėdos">Šv. Kalėdos</a></p>
+                <p class="date" style="color:  #666666; font-size: small;  text-align: justify; ">12-26
+                    <span class="text" style=" font-weight: bold; color: #006600;"><a class="test" href="#" style="color: #006600; text-decoration: none;" data-toggle="tooltip" data-placement="top" title="2023-12-26 Šv. Kalėdų antroji diena">Šv. Kalėdų antroji diena</a></p>
+
+             </div>
+
+             
+                       
+    </main>      
+    </div>
+    </body>
+    </html>
+
+    
